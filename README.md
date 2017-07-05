@@ -36,14 +36,17 @@ yum -y install postgresql95-server postgresql95-contrib
 systemctl start postgresql-9.5
 systemctl enable postgresql-9.5
 ```
+
 #### 5. Precisamos ajustar a configuração do postgresql para aceitar as conexões do PuppetDB com o Banco de Dados, no arquivo  /var/lib/pgsql/9.5/data/pg_hba.conf precisamos adicionar a linha abaixo.
 ```ini
 local     puppetdb       puppetdb                     trust
 ```
+
 #### 6. Precisamos reiniciar o postgres para aplicar as novas configurações.
 ```shell
 systemctl restart postgresql-9.5
 ```
+
 #### 7. Após reiniciar o serviço do postgres, precisamos criar a database e permissionar.
 ```shell
 su postgres
@@ -53,10 +56,12 @@ createuser -a -d -E -P puppetdb
 <REPITIR SENHA>
 exit
 ```
+
 #### 8. Podemos testar a conexão com a database.
 ```shell
 psql -U puppetdb -W
 ```
+
 #### 9. Com sucesso na conexão com o banco, podemos instalar o PuppetDB.
 ```shell
 puppet resource package puppetdb ensure=latest
