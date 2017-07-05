@@ -5,9 +5,10 @@
   https://theforeman.org/plugins/katello/3.4/installation/index.html
 
 - Neste procedimento foi utilizado o duas VM's;
-  - CentOS 7 (Katello), katello.example.local;
-  - CentOS 7 (PuppetDB) puppetdb.example.local;
-- Realizar os procedimentos abaixo para instalar o PuppetDB com o Katello;
+  - CentOS 7 (Katello 3.4), katello.example.local;
+  - CentOS 7 (PuppetDB 4.4), puppetdb.example.local.
+- Este procedimento pode ser utilizado para Foreman;
+- Realizar os procedimentos abaixo para instalar o PuppetDB com o Katello.
 
 #### 1. Realizado o update do servidor e instalado o repositório de PC1 do puppet no servidor PuppetDB.
 ```shell
