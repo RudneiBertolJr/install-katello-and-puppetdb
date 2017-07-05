@@ -183,7 +183,7 @@ class files::import_file {
 
 #### 23. Após criação das classes e importação no katello, podemos aplicar pela GUI a classe e provar o funcionamento do exported resources com o Katello.
 
-#### Documentações Utilizadas.
+- #### Documentações Utilizadas.
 http://blog.aeciopires.com/instalando-configurando-puppetdb-puppetexplorer-puppetboard/
 
 https://github.com/theforeman/puppetdb_foreman
