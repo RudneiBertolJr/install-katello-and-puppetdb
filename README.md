@@ -185,7 +185,11 @@ class files::import_file {
 
 #### Documentações Utilizadas.
 http://blog.aeciopires.com/instalando-configurando-puppetdb-puppetexplorer-puppetboard/
+
 https://github.com/theforeman/puppetdb_foreman
+
 https://theforeman.org/plugins/katello/3.4/index.html
+
 https://docs.puppet.com/puppet/4.10/config_file_routes.html
+
 https://docs.puppet.com/puppet/4.10/lang_exported.html
